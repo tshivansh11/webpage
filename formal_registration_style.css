@@ -1,0 +1,222 @@
+*
+{
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 15px;
+    background:rgb(250, 248, 244) ;
+}
+.container
+{
+    background:rgb(255, 255, 255);
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid blue;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+
+}
+.container h2
+{
+    font-size: 24px;
+    line-height: 24px ;
+    padding: 30px;
+    text-align: center;
+}
+
+.input-name
+{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+.lock
+{ 
+    padding: 8px 11px;
+}
+.name
+{
+    width : 45%;
+    padding: 8px 0px 8px 40px;
+}
+.input-name span
+{
+    margin-left: 35px;
+}
+.text-name
+{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+.input-name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: blue;
+    border-right: 1px solid #cccccc;
+}
+.input-name i 
+{
+    padding: 8px;
+}
+.submit-button
+{
+    max-width: 55px;
+}
+.text-name,.name
+{
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.text-name,.hover,.name:hover
+{
+    background-color: #fafafa;
+}
+.text-name,.focus,.name:focus
+{
+    border: 1px solid blue;
+}
+.redio-button
+{
+    margin-right: 4px;
+    
+}
+.country
+{
+    display: inline-block;
+    width:100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    color: #7b7b7b;
+    border-radius: 0;
+    background-color: white;
+    appearance: none;
+
+}
+.country:hover,.country:focus
+{
+    color: blue;
+    background: #fafafa;
+    border-color: blue;
+    outline: none;
+}
+.text-name
+{
+    border-color: #cccccc;
+}
+.text-name:focus
+{
+    border-color: blue;
+    background :#fafafa;
+    outline: none;
+
+}
+.check-butoon:hover+.check::before
+{
+    border-color: blue;
+}
+.check-butoon:checked +.check::after
+{
+    border-color: green;
+}
+.arrow
+{
+    position: absolute;
+    top:calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0px 5px;
+    border-style:solid;
+    border-color : #7b7b7b transparent transparent transparent;
+}
+.country:hover + .arrow, .country:focus + .arrow
+{
+    border-top-color: blue;
+}
+.button
+{
+    background-color: blue;
+    color:white;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline:none;
+    font-size: 16px;
+}
+.button:hover
+{
+    background-color: green;
+    
+}
+@media(max-width:480px)
+{
+    .container
+    {
+        width: 70%;
+        padding: 0px;
+    }
+    .form-container
+    {
+        width: 100%;
+    }
+    .input-name
+    {
+        margin-bottom: -20px;
+    }
+    .name
+    {
+        width: 100%;
+        padding: 8px 0px 8px 48px;
+    }
+    .input-name span
+    {
+        padding: 0;
+        margin: 0;   
+    }
+    .button
+    {
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    .country
+    {
+        margin-bottom: 15px;
+    }
+    .redio-button
+    {
+        margin-bottom: 15px;
+         
+    }
+    .text-name
+    {
+        margin-bottom: 15px;
+    }
+    .input-name span
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .name
+    {
+        
+        margin-bottom: 15px;
+    }
+     
+
+}
+.input-name
+{
+    margin-top: 15px;
+}
